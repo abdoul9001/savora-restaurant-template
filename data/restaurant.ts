@@ -1,87 +1,85 @@
-export const restaurant = {
-  name: "INTIMISSIME",
+﻿export const restaurant = {
+  // =====================================================
+  // CONFIGURATION DU RESTAURANT — À PERSONNALISER
+  // =====================================================
+
+  name: "MON RESTAURANT",
   subtitle: "Restaurant & Lounge",
-  phone: "+228 71 03 08 10",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "22871030810",
-  address: "647W+2P, Lomé, Togo",
+
+  // Coordonnées
+  phone: "+XX XX XX XX XX",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "XXXXXXXXXXX",
+  address: "Adresse du restaurant, Ville, Pays",
   mapsUrl:
     process.env.NEXT_PUBLIC_GOOGLE_MAPS_URL ??
-    "https://www.google.com/maps/search/?api=1&query=647W%2B2P+Lom%C3%A9",
-  rating: { score: 4.4, count: 18 },
+    "https://www.google.com/maps",
+
+  // Note Google
+  rating: { score: 0.0, count: 0 },
+
+  // Réseaux sociaux (optionnels — laisser vide si non utilisés)
   socials: {
-    facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL ?? "",
+    facebook:  process.env.NEXT_PUBLIC_FACEBOOK_URL  ?? "",
     instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
   },
+
+  // Images (remplacer par les vraies photos dans public/images/)
   images: {
-    hero: "/images/hero.webp",
+    hero:  "/images/hero.webp",
     about: "/images/about.webp",
   },
-  // Horaires réels Google Maps
+
+  // Horaires — adapter selon le restaurant
   hours: {
     schedule: [
-      { day: "Lundi",    slots: ["00:00 à 06:00"] },
-      { day: "Mardi",    slots: ["Fermé"] },
-      { day: "Mercredi", slots: ["18:00 à 00:00"] },
-      { day: "Jeudi",    slots: ["00:00 à 06:00", "18:00 à 00:00"] },
-      { day: "Vendredi", slots: ["00:00 à 06:00", "18:00 à 00:00"] },
-      { day: "Samedi",   slots: ["00:00 à 06:00", "18:00 à 00:00"] },
-      { day: "Dimanche", slots: ["00:00 à 06:00", "18:00 à 00:00"] },
+      { day: "Lundi",    slots: ["Fermé"] },
+      { day: "Mardi",    slots: ["12:00 – 14:30", "19:00 – 23:00"] },
+      { day: "Mercredi", slots: ["12:00 – 14:30", "19:00 – 23:00"] },
+      { day: "Jeudi",    slots: ["12:00 – 14:30", "19:00 – 23:00"] },
+      { day: "Vendredi", slots: ["12:00 – 14:30", "19:00 – 00:00"] },
+      { day: "Samedi",   slots: ["12:00 – 14:30", "19:00 – 00:00"] },
+      { day: "Dimanche", slots: ["12:00 – 15:00"] },
     ],
-    summary: "Mercredi au Dimanche : 18:00 à 06:00 · Lundi : 00:00 à 06:00 · Mardi : Fermé",
+    summary: "Mar–Sam : 12h–14h30 & 19h–23h · Dim : 12h–15h · Lun : Fermé",
   },
-  // Catégories authentiques Google Business Profile
+
+  // Services & aménagements (adapter à la réalité du restaurant)
   amenities: {
     accessibility: [
-      "Parking accessible en fauteuil roulant",
       "Entrée accessible en fauteuil roulant",
       "Places assises accessibles en fauteuil roulant",
-      "Toilettes accessibles en fauteuil roulant",
-      "Boucle magnétique",
-      "Menu en braille",
     ],
     services: [
       "Repas sur place",
-      "Terrasse lounge extérieure",
-      "Drive & Vente à emporter",
-      "Livraison sans contact",
-      "Service nocturne ouvert jusqu'à 06h00",
-      "Bar disponible sur place",
+      "Vente à emporter",
+      "Livraison",
     ],
     strengths: [
-      "Excellents cocktails signatures",
-      "Excellents desserts du Chef",
-      "Grand choix de vins et bières",
-      "Happy hour sur boissons et restauration",
+      "Cuisine faite maison",
+      "Produits frais et locaux",
     ],
     diets: [
-      "Plats halal",
-      "Plats bio",
-      "Convient aux végétariens",
-      "Petites portions à partager",
-      "Formule à volonté",
-      "Menu enfant adapté aux familles",
+      "Plats végétariens disponibles",
+      "Allergènes sur demande",
     ],
     atmosphere: [
-      "Ambiance décontractée et branchée",
-      "Cadre agréable et calme",
-      "Idéal pour dîner en solo, repas en couple ou groupes",
+      "Ambiance conviviale",
+      "Idéal pour les repas en famille ou en couple",
     ],
     parking: [
-      "Parking gratuit privé sur place",
-      "Parking gratuit disponible dans la rue",
-      "Service voiturier en soirée",
+      "Parking à proximité",
     ],
     payments: [
-      "Cartes de débit / bancaires",
-      "Paiements mobiles NFC (T-Money, Flooz)",
-      "Chèques acceptés",
+      "Cartes bancaires acceptées",
       "Paiement en espèces",
     ],
   },
+
+  // Chiffres clés affichés sur la page d'accueil
   stats: [
-    { value: "4,4★", label: "Note Google Maps" },
-    { value: "18",   label: "Avis Clients Vérifiés" },
-    { value: "06h",  label: "Service Nuit & Lounge" },
-    { value: "VIP",  label: "Terrasse & Salons" },
+    { value: "0,0★",  label: "Note Google Maps" },
+    { value: "0",     label: "Avis Clients" },
+    { value: "Xh",    label: "Service continu" },
+    { value: "VIP",   label: "Terrasse & Salons" },
   ],
 };
