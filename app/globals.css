@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg-primary: #fcfbf7;
+  --bg-secondary: #f4efe4;
+  --bg-tertiary: #ebe4d5;
+  --border-color: #dfd7c5;
+  --text-primary: #181715;
+  --text-secondary: #524f48;
+  --text-muted: #7d776d;
+  --gold: #b38628;
+  --gold-hover: #98701e;
+  --gold-glow: rgba(179, 134, 40, 0.18);
+  --gold-gradient: linear-gradient(135deg, #d4a742 0%, #b38628 50%, #876214 100%);
+  --whatsapp: #25d366;
+  --whatsapp-dark: #128c7e;
+  --shadow-card: 0 10px 30px -10px rgba(24, 23, 21, 0.08), 0 2px 6px -2px rgba(24, 23, 21, 0.04);
+  --shadow-gold: 0 0 25px rgba(179, 134, 40, 0.25);
+}
+
+.dark {
+  --bg-primary: #0a0b0e;
+  --bg-secondary: #121319;
+  --bg-tertiary: #191b24;
+  --border-color: #232634;
+  --text-primary: #f6f5f2;
+  --text-secondary: #b5b3aa;
+  --text-muted: #79776f;
+  --gold: #d4af37;
+  --gold-hover: #e5c45b;
+  --gold-glow: rgba(212, 175, 55, 0.2);
+  --gold-gradient: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa8420 100%);
+  --shadow-card: 0 14px 40px -12px rgba(0, 0, 0, 0.7), 0 2px 10px -2px rgba(0, 0, 0, 0.4);
+  --shadow-gold: 0 0 35px rgba(212, 175, 55, 0.25);
+}
+
+@theme inline {
+  --color-bg: var(--bg-primary);
+  --color-bg-alt: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+  --color-line: var(--border-color);
+  --color-fg: var(--text-primary);
+  --color-fg-2: var(--text-secondary);
+  --color-fg-mute: var(--text-muted);
+  --color-gold: var(--gold);
+  --color-gold-hover: var(--gold-hover);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-dark: var(--whatsapp-dark);
+  --font-heading: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-sans-body), var(--font-inter), system-ui, sans-serif;
+  --shadow-card: var(--shadow-card);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--gold);
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+.text-gold-gradient {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: color-mix(in srgb, var(--gold) 35%, transparent);
+}
+
+.gold-glow {
+  box-shadow: var(--shadow-gold);
+}
+
+.luxury-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.luxury-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--gold) 45%, var(--border-color));
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.2), 0 0 20px var(--gold-glow);
+}

@@ -1,0 +1,313 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "booking": "Reservation",
+    "delivery": "Delivery",
+    "about": "The House",
+    "contact": "Contact",
+    "cta": "Book a table"
+  },
+  "hero": {
+    "kicker": "Fine Dining & Lounge · Lomé, Togo",
+    "title": "The Art of Fine Dining & Intimate Lounge",
+    "subtitle": "A symphony of noble flavors, signature mixology and contemporary elegance in the heart of Lomé.",
+    "seeMenu": "Discover Menu",
+    "whatsapp": "Order on WhatsApp",
+    "bookTable": "Book a Table",
+    "badge": "Top Rated Dining Experience in Lomé",
+    "rating": "4.4 / 5",
+    "reviewsCount": "({count} Google Maps reviews)",
+    "terraceFeature": "Terrace & Cozy Atmosphere",
+    "serviceNightFeature": "647W+2P, Lomé · Late Night Service until 06:00"
+  },
+  "info": [
+    {
+      "t": "Signature Cuisine",
+      "d": "Chef's gourmet creations elevating exceptional fresh local products."
+    },
+    {
+      "t": "Cellar & Mixology",
+      "d": "Curated grand cru wines and bespoke artisan cocktails."
+    },
+    {
+      "t": "Intimate & VIP Atmosphere",
+      "d": "Velvet lounges, amber lighting and lush outdoor terrace."
+    },
+    {
+      "t": "Bespoke Service",
+      "d": "A dedicated brigade crafting an unforgettable experience."
+    }
+  ],
+  "menu": {
+    "kicker": "Culinary Creations & Wine Selection",
+    "title": "Our Gastronomic Menu",
+    "subtitle": "Each dish celebrates the rich culinary heritage of Togo and refined international gastronomy.",
+    "searchPlaceholder": "Search by dish, flavor or ingredient...",
+    "clearSearch": "Clear",
+    "emptyTitle": "No culinary items found",
+    "emptySubtitle": "Try adjusting your search or select another category.",
+    "resetFilters": "Reset filters",
+    "order": "Order this dish",
+    "details": "Pairings & Details",
+    "all": "Full Menu",
+    "starters": "Subtle Starters",
+    "mains": "Prestige Mains",
+    "grills": "Wood-Fired Grills",
+    "desserts": "Signature Desserts",
+    "drinks": "Cocktails & Fine Wines",
+    "pairingLabel": "Recommended pairing:",
+    "fcfa": "FCFA",
+    "badgeChef": "Chef's Signature",
+    "spicyBadge": "Spicy Notes",
+    "vegBadge": "Vegetarian",
+    "guaranteeTitle": "Excellence & Freshness Guaranteed",
+    "notice": "All dishes are prepared to order using pristine fresh market and local sea arrivals."
+  },
+  "booking": {
+    "title": "Reserve Your Table",
+    "subtitle": "Treat yourself to an extraordinary moment. For a business lunch, romantic date or celebration, we prepare your arrival down to the finest detail.",
+    "name": "Full Name",
+    "namePlaceholder": "E.g. Mr. Koffi Mensah",
+    "phone": "Phone Number (WhatsApp)",
+    "phonePlaceholder": "+228 90 00 00 00",
+    "date": "Desired Date",
+    "time": "Service Time",
+    "guests": "Number of Guests",
+    "personSingle": "person",
+    "personPlural": "guests",
+    "area": "Preferred Space",
+    "areas": {
+      "main": "Air-Conditioned Elegance Hall",
+      "terrace": "Lush Terrace Lounge",
+      "vip": "Private VIP Salon (up to 12 guests)"
+    },
+    "occasion": "Special Occasion",
+    "occasions": {
+      "dinner": "Tasting Dinner",
+      "romantic": "Romantic Candlelight Dinner",
+      "business": "Business Lunch / Executive Dinner",
+      "birthday": "Birthday or Celebration",
+      "drinks": "Cocktails & Lounge Night"
+    },
+    "message": "Special Requests or Allergies",
+    "messagePlaceholder": "Allergies, quiet table, champagne on arrival...",
+    "send": "Confirm My Reservation on WhatsApp",
+    "submitting": "Preparing your reservation...",
+    "guarantee": "Immediate confirmation by our maître d' via WhatsApp.",
+    "toastSuccess": "Reservation request prepared!",
+    "toastSubtitle": "Complete sending on WhatsApp for immediate confirmation by our concierge.",
+    "summaryTitle": "Your Reservation Summary",
+    "reopenWhatsapp": "Open WhatsApp",
+    "newBooking": "New reservation"
+  },
+  "wa": {
+    "info": "Hello INTIMISSIME,\nI would like more information regarding your restaurant and availability.",
+    "order": "Hello INTIMISSIME,\nI would like to place an order for delivery / takeout.",
+    "dish": "Hello INTIMISSIME,\n\nI would like to order:\n{dish}\n\nPlease let me know the preparation time.",
+    "booking": "Hello INTIMISSIME,\n\nI would like to book a table:\n\n- Name: {name}\n- Phone: {phone}\n- Date: {date}\n- Time: {time}\n- Number of guests: {guests}\n- Space: {area}\n- Occasion: {occasion}\n- Notes: {message}\n\nPlease confirm availability."
+  },
+  "gallery": {
+    "title": "The INTIMISSIME Gallery",
+    "subtitle": "Immerse yourself in our visual universe: harmonious lighting, plate artistry and lounge sophistication.",
+    "all": "View All",
+    "dishes": "The Plate",
+    "venue": "The Venue",
+    "mood": "Atmosphere",
+    "events": "Private Moments",
+    "close": "Close Preview",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "delivery": {
+    "title": "Catering & Private Delivery Service",
+    "subtitle": "Savor INTIMISSIME's culinary excellence at home or in your executive office, prepared with fine-dining care.",
+    "steps": [
+      "Select your favorite dishes from our menu",
+      "Choose your delivery district in Lomé",
+      "Confirm your order directly via WhatsApp",
+      "Receive piping hot dishes in premium thermal insulated packaging"
+    ],
+    "zonesTitle": "Delivery Districts in Lomé",
+    "cta": "Build My Order on WhatsApp",
+    "guarantee": "Our premium insulated packaging preserves the heat and crispness of every preparation."
+  },
+  "about": {
+    "title": "The House INTIMISSIME",
+    "heading": "The Harmony of Refinement and Culinary Passion",
+    "text": "Born from a desire to offer Lomé an exceptional dining scene, INTIMISSIME invites you on a culinary journey. In a contemporary setting blending warm woodwork, dark marble and gentle amber lighting, our Chef and brigade elevate Atlantic seafood and Togolese vegetables with uncompromising fine-dining rigor.",
+    "quote": "« Cooking means unveiling the pure emotion in each ingredient to craft an enduring memory for every guest. »",
+    "chefTitle": "Executive Chef & Founder",
+    "values": [
+      "Precision & Culinary Rigor",
+      "Fresh Local Terroirs Elevated",
+      "Warm Hospitality & Discretion"
+    ],
+    "valuesDesc": [
+      "Minute-precise cookery, rich slow-simmered jus and harmonious seasoning.",
+      "Close partnerships with local artisanal fishermen and coastal farmers in Togo.",
+      "Personalized white-glove hospitality worthy of the finest international tables."
+    ]
+  },
+  "contact": {
+    "kicker": "Access & Concierge",
+    "title": "Contact & Access",
+    "subtitle": "We look forward to welcoming you for a truly memorable experience.",
+    "mainVenue": "Main Establishment",
+    "addressLabel": "Address",
+    "directBooking": "Direct Bookings",
+    "call": "Call Restaurant",
+    "whatsapp": "Chat on WhatsApp",
+    "route": "Open Google Maps",
+    "hours": "Opening Hours",
+    "hoursDetails": "Wednesday to Sunday: 18:00 to 06:00 | Monday: 00:00 to 06:00 | Tuesday: Closed",
+    "closedDay": "Tuesday: Weekly closing",
+    "locationDesc": "647W+2P, Lomé (Free parking available, valet service in the evening)",
+    "gpsCoord": "GPS Coordinates: 647W+2P Lomé, Togo",
+    "comfortTitle": "Comfort & Hospitality",
+    "comfortSubtitle": "Services & Accessibility",
+    "comfortDesc": "Verified practical details to prepare your visit with peace of mind.",
+    "accessibilityTitle": "Accessibility",
+    "parkingTitle": "Parking",
+    "atmosphereTitle": "Atmosphere & Setting",
+    "paymentTitle": "Payment Methods"
+  },
+  "mobile": {
+    "book": "Book",
+    "call": "Call",
+    "menu": "Menu"
+  },
+  "meta": {
+    "home": {
+      "title": "INTIMISSIME Lomé | Fine Dining Restaurant & Lounge",
+      "description": "Discover INTIMISSIME in Lomé: high gastronomy, wood-fired grills, signature mixology, romantic dinners and private VIP salons."
+    },
+    "menu": {
+      "title": "Gourmet Menu & Specialties | INTIMISSIME Lomé",
+      "description": "Browse INTIMISSIME's gourmet menu: royal lobster, rossini tenderloin, wild caught sea bream and signature craft cocktails."
+    },
+    "gallery": {
+      "title": "Atmosphere & Gallery | INTIMISSIME Lomé",
+      "description": "Photographic journey through the intimate salons and culinary creations of INTIMISSIME Lomé."
+    },
+    "booking": {
+      "title": "Book a Table | INTIMISSIME Lomé",
+      "description": "Reserve your table in our elegance dining room, lush terrace or private VIP lounge at INTIMISSIME Lomé."
+    },
+    "delivery": {
+      "title": "Gourmet Delivery | INTIMISSIME Lomé",
+      "description": "Order INTIMISSIME's culinary specialties for express and careful delivery in Lomé via WhatsApp."
+    },
+    "about": {
+      "title": "The House | The Story of INTIMISSIME Lomé",
+      "description": "Discover the story, chef's philosophy and uncompromising commitment to excellence at INTIMISSIME Lomé."
+    },
+    "contact": {
+      "title": "Contact & Directions | INTIMISSIME Lomé",
+      "description": "Access, phone, VIP booking and opening hours for INTIMISSIME in Lomé, Togo."
+    }
+  },
+  "home": {
+    "about": {
+      "kicker": "The INTIMISSIME House",
+      "title": "A Singular Culinary Signature in Lomé",
+      "text": "Balancing protected intimacy with refined boldness, INTIMISSIME redefines the art of hosting. Whether for a discreet executive lunch or an evening illuminated by signature cocktails, let yourself be transported by a rare and luxurious atmosphere.",
+      "cta": "Discover Our House"
+    },
+    "specialties": {
+      "kicker": "Chef's Creations",
+      "title": "Chef's Signature Creations",
+      "subtitle": "A glimpse of the standout dishes that define the prestige of INTIMISSIME.",
+      "cta": "Explore Full Menu"
+    },
+    "why": {
+      "kicker": "Excellence & Craftsmanship",
+      "title": "Excellence According to INTIMISSIME",
+      "items": [
+        "Master Woodfire Grills & Reductions",
+        "Pristine Local & Coastal Ingredients",
+        "Award-Winning Cocktails & Wine Cellar",
+        "Private VIP Salons & Velvet Ambiance"
+      ],
+      "descriptions": [
+        "Flawless mastery over open flames and slowly simmered gourmet jus.",
+        "Meticulous sourcing of the freshest Atlantic seafood and garden produce.",
+        "Harmonious wine pairings and avant-garde artisanal cocktails.",
+        "Guaranteed privacy in an intimate setting of warm amber and gilded tones."
+      ]
+    },
+    "gallery": {
+      "kicker": "Visual Immersion",
+      "title": "Precious Moments in Pictures",
+      "cta": "View Full Gallery"
+    },
+    "reviews": {
+      "kicker": "Reviews & Guest Feedback",
+      "title": "Words from Our Guests",
+      "count": "4.4 · 18 Google Maps reviews",
+      "cta": "Read all reviews on Google Maps",
+      "items": [
+        {
+          "name": "Hilerstik",
+          "city": "Lomé",
+          "badge": "Local Guide · 288 reviews",
+          "comment": "Great atmosphere with a friendly team and impeccable service 👌 A truly delightful spot, highly recommended.",
+          "details": "Food 5/5 · Service 5/5",
+          "rating": 5
+        },
+        {
+          "name": "Marie Claire",
+          "city": "Lomé",
+          "badge": "Verified Guest · Dine-in",
+          "comment": "Service is on point and the staff is very welcoming. Delicious dinner, wait time under 10 minutes.",
+          "details": "Food 5/5 · Service 5/5 · Ambiance 5/5",
+          "rating": 5
+        },
+        {
+          "name": "Kossi Attougan MANAGNIKPO",
+          "city": "Lomé",
+          "badge": "Local Guide · 399 reviews",
+          "comment": "Too cool! Trendy and cozy atmosphere, delicious fine dishes and 5-star service.",
+          "details": "Food 5/5 · Service 5/5 · Ambiance 5/5",
+          "rating": 5
+        },
+        {
+          "name": "Samuel KPELLY",
+          "city": "Lomé",
+          "badge": "Local Guide · 215 reviews",
+          "comment": "Good! Wonderful atmosphere, excellent table service and very attentive team.",
+          "details": "Food 5/5 · Service 5/5 · Ambiance 5/5",
+          "rating": 5
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Privilege Invitation",
+      "title": "An Unforgettable Evening Awaits You",
+      "subtitle": "Book your table now or connect with our concierge for private salon celebrations."
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "text": "This page does not exist or has been relocated.",
+    "home": "Return to Home",
+    "menu": "Explore the Menu"
+  },
+  "footer": {
+    "tagline": "Fine Gastronomy, Velvet Lounge & Signature Mixology in the Heart of Lomé.",
+    "rights": "All rights reserved.",
+    "experience": "The Experience",
+    "access": "Hours & Location",
+    "concierge": "Concierge & Social",
+    "links": {
+      "menu": "Gastronomic Menu",
+      "booking": "Book a Table",
+      "delivery": "Private Delivery & Takeout",
+      "gallery": "Gallery & Atmosphere",
+      "about": "The House INTIMISSIME"
+    }
+  },
+  "theme": "Toggle theme",
+  "lang": "Version Française"
+}
