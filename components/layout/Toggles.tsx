@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 const btn =
-  "inline-flex h-9 min-w-9 items-center justify-center rounded-full border border-line bg-bg-alt/50 px-3 text-xs font-semibold transition-all duration-200 hover:border-gold hover:text-gold hover:shadow-sm active:scale-95";
+  "inline-flex h-9 min-w-9 items-center justify-center rounded-full border border-white/30 bg-transparent px-3 text-xs font-semibold text-white transition-all duration-200 hover:border-gold hover:text-gold active:scale-95";
 
 export function ThemeToggle() {
   const t = useTranslations();

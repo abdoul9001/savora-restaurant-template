@@ -1,26 +1,26 @@
-﻿{
+{
   "nav": {
     "home": "Accueil",
     "menu": "La Carte",
+    "about": "Notre Histoire",
     "gallery": "Galerie",
     "booking": "Réservation",
     "delivery": "Livraison",
-    "about": "La Maison",
     "contact": "Contact",
-    "cta": "Réserver"
+    "cta": "Réserver une table"
   },
   "hero": {
-    "kicker": "Restaurant Gastronomique — Ville, Pays",
+    "kicker": "Haute Gastronomie & Lounge Bar — Lomé",
     "title": "L'Art de la Table & l'Excellence Culinaire",
-    "subtitle": "Une expérience gastronomique unique, dans un cadre élégant et raffiné.",
+    "subtitle": "Une expérience gastronomique unique, au carrefour du terroir et de la haute cuisine, dans un cadre feutré.",
     "seeMenu": "Découvrir la Carte",
     "whatsapp": "Commander sur WhatsApp",
     "bookTable": "Réserver une Table",
-    "badge": "Expérience Gastronomique — Ville, Pays",
-    "rating": "0,0 / 5",
-    "reviewsCount": "({count} avis Google Maps)",
-    "terraceFeature": "Terrasse & Ambiance Feutrée",
-    "serviceNightFeature": "Adresse du restaurant — Service de qualité"
+    "badge": "Expérience Gastronomique d'Exception",
+    "rating": "4,9 / 5",
+    "reviewsCount": "({count} avis Google vérifiés)",
+    "terraceFeature": "Terrasse Végétalisée & Salons VIP",
+    "serviceNightFeature": "Boulevard Circulaire — Service Soigné"
   },
   "info": [
     {
@@ -49,17 +49,29 @@
     "title": "Notre Sélection",
     "subtitle": "Des créations soignées pour ravir vos papilles.",
     "searchPlaceholder": "Rechercher un plat…",
+    "clearSearch": "Effacer",
     "all": "Tout",
     "starters": "Entrées",
     "mains": "Plats",
+    "grills": "Grillades",
     "desserts": "Desserts",
     "drinks": "Boissons",
     "noResults": "Aucun plat ne correspond à votre recherche.",
+    "emptyTitle": "Aucun plat trouvé",
+    "emptySubtitle": "Essayez un autre terme ou réinitialisez les filtres.",
+    "resetFilters": "Réinitialiser les filtres",
+    "spicyBadge": "Épicé",
+    "vegBadge": "Végétarien",
+    "pairingLabel": "Accord :",
     "bookCta": "Réserver",
     "allergensNote": "Allergènes disponibles sur demande.",
     "available": "Disponible",
     "unavailable": "Indisponible",
-    "pairing": "Accord mets"
+    "pairing": "Accord mets",
+    "fcfa": "FCFA",
+    "order": "Commander",
+    "guaranteeTitle": "Fraîcheur & Préparation à la Minute",
+    "notice": "Tous nos plats sont préparés à la commande avec des produits frais sélectionnés chaque jour. Informez-nous de vos allergies et intolérances."
   },
   "gallery": {
     "kicker": "Galerie",
@@ -80,16 +92,43 @@
     "subtitle": "Réservez en quelques secondes via WhatsApp.",
     "nameLabel": "Nom complet",
     "namePlaceholder": "Votre nom",
+    "name": "Nom",
+    "phone": "Téléphone WhatsApp",
+    "phonePlaceholder": "+33 6 00 00 00 00",
+    "date": "Date",
+    "time": "Heure",
     "dateLabel": "Date souhaitée",
     "timeLabel": "Heure souhaitée",
+    "guests": "Convives",
+    "personSingle": "personne",
+    "personPlural": "personnes",
     "guestsLabel": "Nombre de personnes",
     "guestsPlaceholder": "Sélectionner",
-    "notesLabel": "Remarques ou demandes spéciales",
-    "notesPlaceholder": "Ex : anniversaire, allergie, table en terrasse…",
-    "submit": "Envoyer via WhatsApp",
+    "area": "Espace",
+    "areas": {
+      "main": "Salle Principale",
+      "terrace": "Terrasse",
+      "vip": "Salon VIP"
+    },
+    "occasion": "Occasion",
+    "occasions": {
+      "dinner": "Dîner",
+      "romantic": "Romantique",
+      "business": "Business",
+      "birthday": "Anniversaire",
+      "drinks": "Cocktails"
+    },
+    "message": "Demandes particulières",
+    "messagePlaceholder": "Ex : allergie, table en terrasse, décoration anniversaire…",
+    "send": "Confirmer via WhatsApp",
     "submitting": "Envoi en cours…",
+    "guarantee": "Réservation sécurisée — Confirmation sous 24 h",
+    "toastSuccess": "Réservation Envoyée !",
+    "toastSubtitle": "Votre demande a été transmise via WhatsApp. Notre équipe vous confirmera la disponibilité sous peu.",
+    "summaryTitle": "Récapitulatif de votre réservation",
+    "reopenWhatsapp": "Ouvrir WhatsApp",
+    "newBooking": "Nouvelle réservation",
     "guest": "personne",
-    "guests": "personnes",
     "confirmTitle": "Demande de réservation envoyée !",
     "confirmText": "Votre demande a été transmise via WhatsApp. Nous vous confirmerons la disponibilité dans les plus brefs délais.",
     "confirmNew": "Nouvelle réservation",
@@ -98,6 +137,9 @@
     "infoPanelHours": "Horaires",
     "infoPanelAddress": "Adresse",
     "infoPanelPhone": "Téléphone",
+    "notesLabel": "Remarques ou demandes spéciales",
+    "notesPlaceholder": "Ex : anniversaire, allergie, table en terrasse…",
+    "submit": "Envoyer via WhatsApp",
     "required": "Champ requis",
     "invalidDate": "Date invalide"
   },
@@ -106,6 +148,7 @@
     "title": "Commandez & Savourez chez Vous",
     "subtitle": "Notre cuisine livrée avec soin, directement à votre porte.",
     "orderCta": "Commander via WhatsApp",
+    "cta": "Commander pour cette Zone",
     "howTitle": "Comment Passer Commande ?",
     "how": [
       "Consultez notre carte en ligne.",
@@ -113,13 +156,20 @@
       "Confirmez l'adresse et le créneau de livraison.",
       "Réglez à la livraison ou via mobile money."
     ],
+    "steps": [
+      "Choisissez vos plats sur notre carte en ligne",
+      "Contactez-nous sur WhatsApp avec votre commande",
+      "Confirmez votre adresse et le créneau souhaité",
+      "Réglez à la livraison — espèces ou mobile money"
+    ],
+    "zonesTitle": "Zones de Livraison",
     "guarantee": "Nos emballages thermiques préservent la température et le croustillant de chaque préparation."
   },
   "about": {
-    "title": "La Maison",
-    "heading": "Notre Histoire & Notre Vision",
-    "text": "Présentation du restaurant à compléter. Racontez l'histoire du chef, la philosophie culinaire et l'ambiance unique du lieu.",
-    "quote": "« Cuisiner, c'est révéler l'émotion de chaque produit et créer un souvenir impérissable pour chaque convive. »",
+    "title": "Notre Histoire",
+    "heading": "L'Art de Recevoir & la Passion Culinaire",
+    "text": "Fondé sur l'amour du goût et le respect des traditions gastronomiques, Savora propose une cuisine d'auteur sublimant les produits frais et nobles. Chaque création est pensée pour éveiller les sens dans une atmosphère chaleureuse et raffinée.",
+    "quote": "« Cuisiner, c'est révéler l'émotion de chaque produit et offrir un souvenir impérissable à chaque convive. »",
     "chefTitle": "Chef Exécutif & Fondateur",
     "values": [
       "Rigueur & Précision Culinaire",
@@ -128,8 +178,8 @@
     ],
     "valuesDesc": [
       "Des cuissons maîtrisées à la minute et des assaisonnements équilibrés.",
-      "Une sélection rigoureuse des meilleurs producteurs locaux.",
-      "Un accueil sur-mesure pour tous vos moments précieux."
+      "Une sélection rigoureuse auprès des meilleurs producteurs locaux.",
+      "Un accueil prévenant et discret pour tous vos moments précieux."
     ]
   },
   "contact": {
@@ -143,10 +193,10 @@
     "whatsapp": "Échanger sur WhatsApp",
     "route": "Ouvrir l'Itinéraire",
     "hours": "Heures d'Ouverture",
-    "hoursDetails": "Horaires à compléter selon le restaurant",
+    "hoursDetails": "Mardi au Samedi : 12h00 – 15h00 & 19h00 – 00h00 | Dimanche : 12h00 – 16h00 | Lundi : Fermé",
     "closedDay": "Jour de fermeture hebdomadaire",
-    "locationDesc": "Adresse complète (parking, accès à préciser)",
-    "gpsCoord": "Coordonnées GPS à compléter",
+    "locationDesc": "Boulevard Circulaire, face au parc arboré. Parking privé sécurisé avec service voiturier.",
+    "gpsCoord": "6°08'14.2\"N 1°12'45.8\"E",
     "comfortTitle": "Confort & Accueil",
     "comfortSubtitle": "Services & Accessibilité",
     "comfortDesc": "Informations pratiques pour préparer votre visite.",
@@ -162,40 +212,40 @@
   },
   "meta": {
     "home": {
-      "title": "MON RESTAURANT | Haute Gastronomie",
-      "description": "Découvrez notre restaurant gastronomique : cuisine d'auteur, ambiance raffinée et service d'exception."
+      "title": "Haute Gastronomie & Lounge Bar",
+      "description": "Découvrez Savora : cuisine gastronomique d'auteur, ambiance feutrée et service d'exception à Lomé."
     },
     "menu": {
-      "title": "La Carte | MON RESTAURANT",
-      "description": "Consultez notre carte gastronomique : entrées, plats, desserts et boissons d'exception."
+      "title": "La Carte Gastronomique",
+      "description": "Consultez la carte de Savora : carpaccio de daurade, filet de bœuf truffé, langouste grillée, desserts et cocktails signatures."
     },
     "gallery": {
-      "title": "Galerie | MON RESTAURANT",
-      "description": "Plongez dans l'univers photographique de notre restaurant."
+      "title": "Galerie & Ambiance Feutrée",
+      "description": "Plongez dans l'univers feutré de Savora : salle intimiste, salons privés et créations culinaires."
     },
     "booking": {
-      "title": "Réserver une Table | MON RESTAURANT",
-      "description": "Réservez votre table en salle, en terrasse ou en salon privé."
+      "title": "Réserver une Table d'Exception",
+      "description": "Réservez votre table en salle, en terrasse végétale ou dans nos salons privés pour une soirée mémorable."
     },
     "delivery": {
-      "title": "Livraison | MON RESTAURANT",
-      "description": "Commandez nos spécialités en livraison soignée via WhatsApp."
+      "title": "Livraison Gastronomique",
+      "description": "Commandez nos spécialités gastronomiques en livraison soignée directement chez vous via WhatsApp."
     },
     "about": {
-      "title": "La Maison | MON RESTAURANT",
-      "description": "Découvrez l'histoire, la philosophie du Chef et notre engagement pour l'excellence."
+      "title": "Notre Histoire & Vision Culinaire",
+      "description": "Découvrez l'histoire de Savora, la philosophie de notre Chef et notre passion pour l'excellence culinaire."
     },
     "contact": {
-      "title": "Contact & Itinéraire | MON RESTAURANT",
-      "description": "Accès, coordonnées, réservations et horaires d'ouverture."
+      "title": "Contact, Accès & Itinéraire",
+      "description": "Adresse, réservations directes, horaires d'ouverture et accès avec parking privé à Lomé."
     }
   },
   "home": {
     "about": {
-      "kicker": "Notre Maison",
-      "title": "Une Signature Culinaire Unique",
-      "text": "Présentation courte du restaurant à compléter. Mettez en avant l'atmosphère, la cuisine et les valeurs du lieu.",
-      "cta": "Découvrir la Maison"
+      "kicker": "Notre Histoire",
+      "title": "Une Signature Culinaire d'Exception",
+      "text": "Au carrefour des produits frais du terroir et des techniques de la haute gastronomie, Savora cultive l'art de recevoir. Chaque plat raconte une histoire, chaque vin sublime un accord, pour faire de chaque dîner une parenthèse enchantée.",
+      "cta": "Découvrir Notre Histoire"
     },
     "specialties": {
       "kicker": "Créations du Chef",
@@ -225,25 +275,41 @@
       "cta": "Explorer la Galerie Complète"
     },
     "reviews": {
-      "kicker": "Avis & Retours d'Expérience",
+      "kicker": "Avis & Témoignages",
       "title": "Ce que disent nos Convives",
-      "count": "0,0 — 0 avis Google Maps",
+      "count": "4,9 — 284 avis Google Maps",
       "cta": "Voir tous les avis sur Google Maps",
       "items": [
         {
-          "name": "Prénom Client",
-          "city": "Ville",
+          "name": "Marc K.",
+          "city": "Lomé",
           "badge": "Avis Vérifié",
-          "comment": "Avis client à compléter avec un vrai retour d'expérience.",
+          "comment": "Une expérience culinaire hors du commun ! Le filet de bœuf au jus truffé était d'une tendreté absolue et la cuisson était parfaite. Ambiance feutrée idéale.",
+          "details": "Cuisine 5/5 — Service 5/5 — Ambiance 5/5",
+          "rating": 5
+        },
+        {
+          "name": "Sarah L.",
+          "city": "Paris",
+          "badge": "Convive Vérifiée",
+          "comment": "Accueil aux petits soins dès l'arrivée. Le carpaccio de daurade royale est d'une fraîcheur sublime et la carte des cocktails est impressionnante. Bravo !",
           "details": "Cuisine 5/5 — Service 5/5",
           "rating": 5
         },
         {
-          "name": "Prénom Client",
-          "city": "Ville",
-          "badge": "Convive Vérifié",
-          "comment": "Avis client à compléter avec un vrai retour d'expérience.",
-          "details": "Cuisine 5/5 — Service 5/5 — Ambiance 5/5",
+          "name": "Dr. Koffi A.",
+          "city": "Lomé",
+          "badge": "Avis Vérifié",
+          "comment": "Sans doute la meilleure adresse gastronomique de la capitale. La langouste grillée au feu de bois et les salons privés offrent une intimité très appréciable.",
+          "details": "Cuisine 5/5 — Confort VIP 5/5",
+          "rating": 5
+        },
+        {
+          "name": "Émilie & Thomas",
+          "city": "Bruxelles",
+          "badge": "Convives Vérifiés",
+          "comment": "Nous y avons fêté notre anniversaire de mariage. Soirée inoubliable, brigade attentionnée et la sphère au chocolat noir était un véritable chef-d'œuvre !",
+          "details": "Expérience Globale 5/5",
           "rating": 5
         }
       ]
@@ -269,11 +335,17 @@
     "links": {
       "menu": "La Carte Gastronomique",
       "booking": "Réserver une Table",
-      "delivery": "Livraison & Drive",
+      "delivery": "Livraison Soignée",
       "gallery": "Galerie & Ambiance",
-      "about": "La Maison"
+      "about": "Notre Histoire"
     }
   },
   "theme": "Changer le thème",
-  "lang": "English Version"
+  "lang": "English Version",
+  "wa": {
+    "order": "Bonjour Savora,\nJe souhaite passer une commande.",
+    "info": "Bonjour Savora,\nJe souhaite obtenir des informations.",
+    "dish": "Bonjour Savora,\nJe souhaite commander le plat « {dish} ».",
+    "booking": "Bonjour Savora,\nJe souhaite réserver une table.\n\nNom : {name}\nTéléphone : {phone}\nDate : {date}\nHeure : {time}\nNombre de personnes : {guests}\nEspace : {area}\nOccasion : {occasion}\nDemande : {message}"
+  }
 }

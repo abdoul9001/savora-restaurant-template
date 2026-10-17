@@ -1,85 +1,85 @@
-﻿export const restaurant = {
+export const restaurant = {
   // =====================================================
-  // CONFIGURATION DU RESTAURANT — À PERSONNALISER
+  // CONFIGURATION DU RESTAURANT — MODÈLE SAVORA
   // =====================================================
 
-  name: "MON RESTAURANT",
-  subtitle: "Restaurant & Lounge",
+  name: "Savora",
+  subtitle: "Haute Gastronomie & Lounge Bar",
 
-  // Coordonnées
-  phone: "+XX XX XX XX XX",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "XXXXXXXXXXX",
-  address: "Adresse du restaurant, Ville, Pays",
+  // Coordonnées de contact
+  phone: "+228 90 12 34 56",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "+22890123456",
+  address: "Boulevard Circulaire, Quartier Résidentiel, Lomé, Togo",
   mapsUrl:
     process.env.NEXT_PUBLIC_GOOGLE_MAPS_URL ??
-    "https://www.google.com/maps",
+    "https://maps.google.com/?q=Lome+Togo",
 
-  // Note Google
-  rating: { score: 0.0, count: 0 },
+  // Note & Réputation
+  rating: { score: 4.9, count: 284 },
 
-  // Réseaux sociaux (optionnels — laisser vide si non utilisés)
+  // Réseaux sociaux
   socials: {
-    facebook:  process.env.NEXT_PUBLIC_FACEBOOK_URL  ?? "",
-    instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
+    facebook:  process.env.NEXT_PUBLIC_FACEBOOK_URL  ?? "https://facebook.com",
+    instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "https://instagram.com",
   },
 
-  // Images (remplacer par les vraies photos dans public/images/)
+  // Images principales
   images: {
-    hero:  "/images/hero.webp",
-    about: "/images/about.webp",
+    hero:  "/images/hero-lounge.jpg",
+    about: "/images/about-dining.jpg",
   },
 
-  // Horaires — adapter selon le restaurant
+  // Horaires de service
   hours: {
     schedule: [
       { day: "Lundi",    slots: ["Fermé"] },
-      { day: "Mardi",    slots: ["12:00 – 14:30", "19:00 – 23:00"] },
-      { day: "Mercredi", slots: ["12:00 – 14:30", "19:00 – 23:00"] },
-      { day: "Jeudi",    slots: ["12:00 – 14:30", "19:00 – 23:00"] },
-      { day: "Vendredi", slots: ["12:00 – 14:30", "19:00 – 00:00"] },
-      { day: "Samedi",   slots: ["12:00 – 14:30", "19:00 – 00:00"] },
-      { day: "Dimanche", slots: ["12:00 – 15:00"] },
+      { day: "Mardi",    slots: ["12:00 – 15:00", "19:00 – 23:30"] },
+      { day: "Mercredi", slots: ["12:00 – 15:00", "19:00 – 23:30"] },
+      { day: "Jeudi",    slots: ["12:00 – 15:00", "19:00 – 23:30"] },
+      { day: "Vendredi", slots: ["12:00 – 15:00", "19:00 – 01:00"] },
+      { day: "Samedi",   slots: ["12:00 – 15:30", "19:00 – 01:00"] },
+      { day: "Dimanche", slots: ["12:00 – 16:00 (Brunch & Déjeuner)"] },
     ],
-    summary: "Mar–Sam : 12h–14h30 & 19h–23h · Dim : 12h–15h · Lun : Fermé",
+    summary: "Mar–Sam : 12h–15h & 19h–00h · Dim : 12h–16h · Lun : Fermé",
   },
 
-  // Services & aménagements (adapter à la réalité du restaurant)
+  // Services & aménagements
   amenities: {
     accessibility: [
-      "Entrée accessible en fauteuil roulant",
-      "Places assises accessibles en fauteuil roulant",
+      "Entrée de plain-pied accessible PMR",
+      "Places assises spacieuses et confortables",
     ],
     services: [
-      "Repas sur place",
-      "Vente à emporter",
-      "Livraison",
+      "Dîner en salle intimiste & terrasse",
+      "Salons VIP privés pour affaires & familles",
+      "Service traiteur & livraison soignée",
     ],
     strengths: [
-      "Cuisine faite maison",
-      "Produits frais et locaux",
+      "Cuisine d'auteur 100% faite maison",
+      "Sélection de produits nobles & terroirs frais",
     ],
     diets: [
-      "Plats végétariens disponibles",
-      "Allergènes sur demande",
+      "Options végétariennes & sans gluten",
+      "Adaptation aux allergies sur demande",
     ],
     atmosphere: [
-      "Ambiance conviviale",
-      "Idéal pour les repas en famille ou en couple",
+      "Ambiance feutrée, musique soignée & lumière ambrée",
+      "Cadre romantique et confidentiel",
     ],
     parking: [
-      "Parking à proximité",
+      "Parking privé surveillé & service voiturier",
     ],
     payments: [
-      "Cartes bancaires acceptées",
-      "Paiement en espèces",
+      "Cartes bancaires (Visa, Mastercard)",
+      "Mobile Money (T-Money, Moov Money) & Espèces",
     ],
   },
 
   // Chiffres clés affichés sur la page d'accueil
   stats: [
-    { value: "0,0★",  label: "Note Google Maps" },
-    { value: "0",     label: "Avis Clients" },
-    { value: "Xh",    label: "Service continu" },
-    { value: "VIP",   label: "Terrasse & Salons" },
+    { value: "4,9★",  label: "Note Google Maps" },
+    { value: "280+",  label: "Avis Élogieux" },
+    { value: "100%",  label: "Produits Frais & Fait Maison" },
+    { value: "VIP",   label: "Terrasse & Salons Privés" },
   ],
 };

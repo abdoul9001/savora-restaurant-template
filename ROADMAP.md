@@ -1,4 +1,4 @@
-﻿# ROADMAP — INTIMISSIME
+# ROADMAP — Savora
 
 > Pistes d amélioration identifiées après audit complet du projet.
 > Chaque item est classé par priorité et domaine, avec une estimation d effort.
@@ -47,12 +47,12 @@ lib/mailer.ts                  <- Abstraction d envoi d e-mail
 
 ```env
 RESEND_API_KEY=re_xxxx
-RESERVATION_TO_EMAIL=reservations@intimissime.com
+RESERVATION_TO_EMAIL=reservations@Savora.com
 
 # OU SMTP classique
 SMTP_HOST=smtp.example.com
 SMTP_PORT=587
-SMTP_USER=noreply@intimissime.com
+SMTP_USER=noreply@Savora.com
 SMTP_PASS=xxxx
 ```
 
@@ -178,7 +178,7 @@ jobs:
       - uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/OWNER/intimissime:latest
+          tags: ghcr.io/OWNER/Savora:latest
 ```
 
 ---
@@ -200,8 +200,8 @@ npx @sentry/wizard@latest -i nextjs
 ```env
 NEXT_PUBLIC_SENTRY_DSN=https://xxxx@oXXX.ingest.sentry.io/XXXX
 SENTRY_AUTH_TOKEN=xxxx
-SENTRY_ORG=intimissime
-SENTRY_PROJECT=intimissime-web
+SENTRY_ORG=Savora
+SENTRY_PROJECT=Savora-web
 ```
 
 ### Bénéfices
@@ -276,7 +276,7 @@ Envoyer des notifications push aux clients ayant installé la PWA (offres spéci
 ```env
 VAPID_PUBLIC_KEY=xxxx
 VAPID_PRIVATE_KEY=xxxx
-VAPID_SUBJECT=mailto:contact@intimissime.com
+VAPID_SUBJECT=mailto:contact@Savora.com
 ```
 
 ---

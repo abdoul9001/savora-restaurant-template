@@ -19,7 +19,7 @@ export async function pageMetadata(locale: string, key: string, path: string): P
       title,
       description,
       url: `/${locale}${path}`,
-      siteName: "INTIMISSIME",
+      siteName: "Savora",
       type: "website",
       locale: locale === "fr" ? "fr_TG" : "en_US",
     },

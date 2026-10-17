@@ -21,7 +21,7 @@ export function Reviews() {
   }[];
 
   return (
-    <section className="py-20 bg-bg-alt/50 border-y border-line/60">
+    <section className="py-20">
       <div className="mx-auto max-w-6xl px-5">
         {/* En-tête */}
         <motion.div
@@ -62,11 +62,11 @@ export function Reviews() {
           viewport={viewport}
           variants={stagger(0.05, 0.12)}
         >
-          {reviewItems.map((rev) => (
+          {reviewItems.map((rev, idx) => (
             <motion.div
-              key={rev.name}
+              key={`${rev.name}-${idx}`}
               variants={scaleIn}
-              className="luxury-card rounded-2xl border border-line bg-bg p-6 shadow-card flex flex-col justify-between"
+              className="luxury-card flex flex-col justify-between rounded-md bg-navy p-6 text-white"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -81,7 +81,7 @@ export function Reviews() {
                   </span>
                 </div>
 
-                <p className="text-xs sm:text-sm text-fg-2 italic leading-relaxed">
+                <p className="text-xs sm:text-sm text-white/90 italic leading-relaxed">
                   « {rev.comment} »
                 </p>
 
@@ -92,13 +92,13 @@ export function Reviews() {
                 )}
               </div>
 
-              <div className="mt-6 pt-4 border-t border-line/60 flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/15 font-heading font-bold text-gold text-sm">
+              <div className="mt-6 pt-4 border-t border-white/15 flex items-center gap-3">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-4 border-gold bg-white/10 font-heading font-bold text-gold text-lg">
                   {rev.name[0]}
                 </div>
                 <div className="min-w-0">
-                  <h4 className="text-sm font-semibold text-fg truncate">{rev.name}</h4>
-                  <p className="text-[11px] text-fg-mute truncate">
+                  <h4 className="text-sm font-semibold text-white truncate">{rev.name}</h4>
+                  <p className="text-[11px] text-white/60 truncate">
                     {rev.badge || rev.city}
                   </p>
                 </div>
@@ -114,7 +114,7 @@ export function Reviews() {
           viewport={viewport}
           variants={fadeUp}
         >
-          <Button asChild variant="outline" className="px-6 py-2.5">
+          <Button asChild className="px-10 py-2.5">
             <a href={restaurant.mapsUrl} target="_blank" rel="noopener">
               {t("cta")}
             </a>

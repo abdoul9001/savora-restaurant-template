@@ -28,30 +28,30 @@ export function Footer() {
   ].filter((s) => s.href);
 
   return (
-    <footer className="border-t border-line/80 bg-bg-alt py-16 text-xs sm:text-sm text-fg-2 transition-colors">
+    <footer className="bg-navy py-16 text-xs text-white sm:text-sm">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 sm:grid-cols-2 lg:grid-cols-4">
         {/* 1. Identité & Prestige */}
         <div className="space-y-3">
           <Link href="/" className="inline-block group">
-            <span className="font-heading text-2xl font-bold tracking-[0.25em] text-fg transition-colors group-hover:text-gold">
-              INTIMISSIME
+            <span className="font-heading text-4xl font-bold text-white transition-colors group-hover:text-gold">
+              Savora
             </span>
           </Link>
-          <p className="text-xs text-fg-mute leading-relaxed">
+          <p className="text-xs text-white/70 leading-relaxed">
             {t("tagline")}
           </p>
           <div className="pt-1 flex items-center gap-2 text-xs">
             <span className="text-gold font-bold">★ {restaurant.rating.score} / 5</span>
-            <span className="text-fg-mute">({restaurant.rating.count} avis Google)</span>
+            <span className="text-white/70">({restaurant.rating.count} avis Google)</span>
           </div>
-          <p className="text-[11px] text-fg-mute">
+          <p className="text-[11px] text-white/70">
             Nocturne jusqu&apos;à 06h00 · Parking gratuit
           </p>
         </div>
 
         {/* 2. L'Expérience (remplace la navigation redondante) */}
         <div>
-          <p className="mb-3 font-semibold uppercase tracking-wider text-fg text-xs">
+          <p className="mb-3 font-heading text-3xl font-semibold text-white">
             {t("experience")}
           </p>
           <ul className="space-y-2.5">
@@ -70,7 +70,7 @@ export function Footer() {
 
         {/* 3. Horaires & Accès */}
         <div className="space-y-3">
-          <p className="mb-3 font-semibold uppercase tracking-wider text-fg text-xs">
+          <p className="mb-3 font-heading text-3xl font-semibold text-white">
             {t("access")}
           </p>
           <a
@@ -82,25 +82,25 @@ export function Footer() {
             <FlaticonPinMap size={16} className="text-gold shrink-0 mt-0.5" />
             <span className="group-hover:underline">{restaurant.address}</span>
           </a>
-          <p className="flex items-start gap-2 text-xs text-fg-mute leading-relaxed">
+          <p className="flex items-start gap-2 text-xs text-white/70 leading-relaxed">
             <FlaticonClockTime size={16} className="text-gold shrink-0 mt-0.5" />
             <span>{restaurant.hours.summary}</span>
           </p>
-          <p className="text-[11px] text-fg-mute pt-1">
+          <p className="text-[11px] text-white/70 pt-1">
             Service voiturier disponible en soirée
           </p>
         </div>
 
         {/* 4. Conciergerie & Réseaux */}
         <div className="space-y-3">
-          <p className="mb-3 font-semibold uppercase tracking-wider text-fg text-xs">
+          <p className="mb-3 font-heading text-3xl font-semibold text-white">
             {t("concierge")}
           </p>
           <p className="flex items-center gap-2">
             <FlaticonPhoneCall size={16} className="text-gold shrink-0" />
             <a
               href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
-              className="hover:text-gold font-semibold text-fg"
+              className="hover:text-gold font-semibold text-white"
             >
               {restaurant.phone}
             </a>
@@ -125,22 +125,22 @@ export function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noopener"
-                className="transition-colors hover:text-gold text-fg-2 font-medium"
+                className="transition-colors hover:text-gold text-white font-medium"
               >
                 {s.label}
               </a>
             ))}
           </div>
 
-          <p className="text-[10px] text-fg-mute pt-2">
+          <p className="text-[10px] text-white/70 pt-2">
             Cartes · NFC · T-Money · Flooz · Espèces
           </p>
         </div>
       </div>
 
       {/* Barre inférieure */}
-      <div className="mx-auto mt-12 max-w-6xl border-t border-line/60 px-5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-fg-mute">
-        <p>© 2026 INTIMISSIME Lomé · {t("rights")}</p>
+      <div className="mx-auto mt-12 max-w-6xl border-t border-white/15 px-5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70">
+        <p>© 2026 Savora Lomé · {t("rights")}</p>
         <p className="font-heading italic text-sm text-gold">
           L&apos;Excellence Gastronomique & Lounge
         </p>

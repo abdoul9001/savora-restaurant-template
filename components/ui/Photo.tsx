@@ -22,7 +22,7 @@ export function Photo({
   return (
     <div className={cn("relative overflow-hidden bg-gradient-to-br from-gold/50 to-fg/70", className)}>
       {src ? (
-        <Image src={src} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
+        <Image src={src} alt={alt} fill sizes={sizes} priority={priority} unoptimized className="object-cover" />
       ) : label ? (
         <span className="absolute bottom-3 left-3 text-xs text-white">{label}</span>
       ) : null}

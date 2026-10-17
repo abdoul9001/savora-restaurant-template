@@ -1,26 +1,26 @@
-﻿{
+{
   "nav": {
     "home": "Home",
-    "menu": "Menu",
+    "menu": "The Menu",
+    "about": "Our Story",
     "gallery": "Gallery",
     "booking": "Reservation",
     "delivery": "Delivery",
-    "about": "About",
     "contact": "Contact",
-    "cta": "Book"
+    "cta": "Book a Table"
   },
   "hero": {
-    "kicker": "Fine Dining Restaurant — City, Country",
-    "title": "The Art of Fine Dining & Culinary Excellence",
-    "subtitle": "A unique gastronomic experience in an elegant and refined setting.",
+    "kicker": "Fine Dining & Lounge Bar — Lomé",
+    "title": "The Art of Dining & Culinary Excellence",
+    "subtitle": "An exceptional fine dining experience where local terroir meets haute cuisine in an intimate setting.",
     "seeMenu": "Discover the Menu",
     "whatsapp": "Order on WhatsApp",
     "bookTable": "Book a Table",
-    "badge": "Gastronomic Experience — City, Country",
-    "rating": "0.0 / 5",
-    "reviewsCount": "({count} Google Maps reviews)",
-    "terraceFeature": "Terrace & Intimate Atmosphere",
-    "serviceNightFeature": "Restaurant address — Quality service"
+    "badge": "Exceptional Culinary Experience",
+    "rating": "4.9 / 5",
+    "reviewsCount": "({count} verified Google reviews)",
+    "terraceFeature": "Garden Terrace & VIP Lounges",
+    "serviceNightFeature": "Boulevard Circulaire — Attentive Service"
   },
   "info": [
     {
@@ -49,17 +49,29 @@
     "title": "Our Selection",
     "subtitle": "Carefully crafted dishes to delight your palate.",
     "searchPlaceholder": "Search a dish…",
+    "clearSearch": "Clear",
     "all": "All",
     "starters": "Starters",
     "mains": "Mains",
+    "grills": "Grills",
     "desserts": "Desserts",
     "drinks": "Drinks",
     "noResults": "No dish matches your search.",
+    "emptyTitle": "No dishes found",
+    "emptySubtitle": "Try a different term or reset the filters.",
+    "resetFilters": "Reset filters",
+    "spicyBadge": "Spicy",
+    "vegBadge": "Vegetarian",
+    "pairingLabel": "Pairing:",
     "bookCta": "Book",
     "allergensNote": "Allergens available on request.",
     "available": "Available",
     "unavailable": "Unavailable",
-    "pairing": "Wine pairing"
+    "pairing": "Wine pairing",
+    "fcfa": "FCFA",
+    "order": "Order",
+    "guaranteeTitle": "Freshness & Made-to-Order",
+    "notice": "All our dishes are freshly prepared to order using produce selected daily. Please inform us of any allergies or dietary requirements."
   },
   "gallery": {
     "kicker": "Gallery",
@@ -80,16 +92,43 @@
     "subtitle": "Reserve in seconds via WhatsApp.",
     "nameLabel": "Full name",
     "namePlaceholder": "Your name",
+    "name": "Name",
+    "phone": "WhatsApp Phone",
+    "phonePlaceholder": "+1 000 000 0000",
+    "date": "Date",
+    "time": "Time",
     "dateLabel": "Preferred date",
     "timeLabel": "Preferred time",
+    "guests": "Guests",
+    "personSingle": "guest",
+    "personPlural": "guests",
     "guestsLabel": "Number of guests",
     "guestsPlaceholder": "Select",
-    "notesLabel": "Notes or special requests",
-    "notesPlaceholder": "E.g. birthday, allergy, terrace table…",
-    "submit": "Send via WhatsApp",
+    "area": "Area",
+    "areas": {
+      "main": "Main Dining Room",
+      "terrace": "Terrace",
+      "vip": "VIP Lounge"
+    },
+    "occasion": "Occasion",
+    "occasions": {
+      "dinner": "Dinner",
+      "romantic": "Romantic",
+      "business": "Business",
+      "birthday": "Birthday",
+      "drinks": "Cocktails"
+    },
+    "message": "Special Requests",
+    "messagePlaceholder": "E.g. allergy, terrace table, birthday decoration…",
+    "send": "Confirm via WhatsApp",
     "submitting": "Sending…",
+    "guarantee": "Secure reservation — Confirmation within 24 h",
+    "toastSuccess": "Reservation Sent!",
+    "toastSubtitle": "Your request has been sent via WhatsApp. Our team will confirm availability shortly.",
+    "summaryTitle": "Your Reservation Summary",
+    "reopenWhatsapp": "Open WhatsApp",
+    "newBooking": "New reservation",
     "guest": "guest",
-    "guests": "guests",
     "confirmTitle": "Reservation request sent!",
     "confirmText": "Your request has been sent via WhatsApp. We will confirm availability as soon as possible.",
     "confirmNew": "New reservation",
@@ -98,6 +137,9 @@
     "infoPanelHours": "Opening Hours",
     "infoPanelAddress": "Address",
     "infoPanelPhone": "Phone",
+    "notesLabel": "Notes or special requests",
+    "notesPlaceholder": "E.g. birthday, allergy, terrace table…",
+    "submit": "Send via WhatsApp",
     "required": "Required field",
     "invalidDate": "Invalid date"
   },
@@ -106,6 +148,7 @@
     "title": "Order & Enjoy at Home",
     "subtitle": "Our cuisine delivered with care, straight to your door.",
     "orderCta": "Order via WhatsApp",
+    "cta": "Order for this Zone",
     "howTitle": "How to Order?",
     "how": [
       "Browse our menu online.",
@@ -113,23 +156,30 @@
       "Confirm your address and delivery time.",
       "Pay on delivery or via mobile money."
     ],
+    "steps": [
+      "Choose your dishes from our online menu",
+      "Contact us on WhatsApp with your order",
+      "Confirm your address and preferred time slot",
+      "Pay on delivery — cash or mobile money"
+    ],
+    "zonesTitle": "Delivery Zones",
     "guarantee": "Our thermal packaging preserves the temperature and crispness of every dish."
   },
   "about": {
     "title": "Our Story",
-    "heading": "Our Story & Vision",
-    "text": "Restaurant description to be filled in. Share the chef's story, culinary philosophy and the unique atmosphere of the venue.",
-    "quote": "\"Cooking is about revealing the emotion of every ingredient and creating an unforgettable memory for every guest.\"",
+    "heading": "The Art of Hospitality & Culinary Passion",
+    "text": "Founded on a deep love for fine taste and culinary traditions, Savora offers signature gastronomy elevating fresh, noble ingredients. Every dish is crafted to awaken your senses in a warm and sophisticated ambiance.",
+    "quote": "« Cooking is about revealing the emotion of every ingredient and creating unforgettable memories for our guests. »",
     "chefTitle": "Executive Chef & Founder",
     "values": [
-      "Culinary Rigor & Precision",
-      "Fresh Produce & Local Terroir",
+      "Culinary Precision & Mastery",
+      "Fresh Terroir & Handpicked Produce",
       "Warm Hospitality & Discretion"
     ],
     "valuesDesc": [
-      "Perfectly timed cooking techniques and balanced seasonings.",
-      "Rigorous selection of the finest local producers.",
-      "Bespoke hospitality for every precious moment."
+      "Minute-precise cooking and harmoniously balanced seasonings.",
+      "Rigorous selection from the finest local growers and artisans.",
+      "Attentive and discreet service tailored to your special occasions."
     ]
   },
   "contact": {
@@ -143,10 +193,10 @@
     "whatsapp": "Chat on WhatsApp",
     "route": "Open Directions",
     "hours": "Opening Hours",
-    "hoursDetails": "Opening hours to be completed",
+    "hoursDetails": "Tuesday to Saturday: 12:00 PM – 3:00 PM & 7:00 PM – 12:00 AM | Sunday: 12:00 PM – 4:00 PM | Monday: Closed",
     "closedDay": "Weekly closing day",
-    "locationDesc": "Full address (parking and access to be specified)",
-    "gpsCoord": "GPS coordinates to be completed",
+    "locationDesc": "Boulevard Circulaire, facing the leafy park. Private guarded parking with valet service.",
+    "gpsCoord": "6°08'14.2\"N 1°12'45.8\"E",
     "comfortTitle": "Comfort & Welcome",
     "comfortSubtitle": "Services & Accessibility",
     "comfortDesc": "Practical information to prepare your visit.",
@@ -162,39 +212,39 @@
   },
   "meta": {
     "home": {
-      "title": "MY RESTAURANT | Fine Dining",
-      "description": "Discover our fine dining restaurant: chef's cuisine, refined atmosphere and exceptional service."
+      "title": "Fine Dining & Lounge Bar",
+      "description": "Discover Savora: signature gourmet cuisine, intimate ambiance, and exceptional service in Lomé."
     },
     "menu": {
-      "title": "Menu | MY RESTAURANT",
-      "description": "Browse our menu: starters, mains, desserts and exceptional drinks."
+      "title": "Fine Dining Menu",
+      "description": "Browse Savora's menu: sea bream carpaccio, truffle beef tenderloin, grilled lobster, desserts, and cocktails."
     },
     "gallery": {
-      "title": "Gallery | MY RESTAURANT",
-      "description": "Immerse yourself in the photographic universe of our restaurant."
+      "title": "Gallery & Atmosphere",
+      "description": "Immerse yourself in Savora's refined setting: intimate dining room, private VIP lounges, and culinary creations."
     },
     "booking": {
-      "title": "Book a Table | MY RESTAURANT",
-      "description": "Reserve your table in the dining room, on the terrace or in a private lounge."
+      "title": "Book an Exclusive Table",
+      "description": "Reserve your table in the dining room, on the terrace, or in a private salon for an unforgettable dining experience."
     },
     "delivery": {
-      "title": "Delivery | MY RESTAURANT",
-      "description": "Order our specialties for home delivery via WhatsApp."
+      "title": "Gourmet Delivery",
+      "description": "Order our chef's specialties with premium delivery service straight to your door via WhatsApp."
     },
     "about": {
-      "title": "About | MY RESTAURANT",
-      "description": "Discover the story, the Chef's philosophy and our commitment to excellence."
+      "title": "Our Story & Philosophy",
+      "description": "Discover the story behind Savora, our chef's philosophy, and our dedication to culinary artistry."
     },
     "contact": {
-      "title": "Contact & Directions | MY RESTAURANT",
-      "description": "Directions, contact details, reservations and opening hours."
+      "title": "Contact & Directions",
+      "description": "Address, direct reservations, opening hours, and private parking details in Lomé."
     }
   },
   "home": {
     "about": {
-      "kicker": "Our Home",
-      "title": "A Unique Culinary Signature",
-      "text": "Short restaurant description to be filled in. Highlight the atmosphere, cuisine and values of the venue.",
+      "kicker": "Our Story",
+      "title": "An Exceptional Culinary Signature",
+      "text": "Where fresh local ingredients meet the precision of haute cuisine, Savora celebrates the finest hospitality. Every dish tells a story, and every wine completes a harmonious pairing, making each dinner an enchanting moment.",
       "cta": "Discover Our Story"
     },
     "specialties": {
@@ -225,25 +275,41 @@
       "cta": "Explore the Full Gallery"
     },
     "reviews": {
-      "kicker": "Reviews & Feedback",
+      "kicker": "Guest Testimonials",
       "title": "What Our Guests Say",
-      "count": "0.0 — 0 Google Maps reviews",
+      "count": "4.9 — 284 Google Maps reviews",
       "cta": "See all reviews on Google Maps",
       "items": [
         {
-          "name": "Guest Name",
-          "city": "City",
+          "name": "Marc K.",
+          "city": "Lomé",
           "badge": "Verified Review",
-          "comment": "Guest review to be filled in with a real experience.",
+          "comment": "An extraordinary dining experience! The beef tenderloin with truffle jus was tender beyond belief and perfectly cooked. The cozy ambiance is second to none.",
+          "details": "Food 5/5 — Service 5/5 — Atmosphere 5/5",
+          "rating": 5
+        },
+        {
+          "name": "Sarah L.",
+          "city": "Paris",
+          "badge": "Verified Guest",
+          "comment": "Warm and attentive welcome from the moment we stepped in. The sea bream carpaccio is delightfully fresh, and the cocktail menu is world class.",
           "details": "Food 5/5 — Service 5/5",
           "rating": 5
         },
         {
-          "name": "Guest Name",
-          "city": "City",
-          "badge": "Verified Guest",
-          "comment": "Guest review to be filled in with a real experience.",
-          "details": "Food 5/5 — Service 5/5 — Atmosphere 5/5",
+          "name": "Dr. Koffi A.",
+          "city": "Lomé",
+          "badge": "Verified Review",
+          "comment": "Undoubtedly the premier fine dining restaurant in the city. The wood-grilled lobster and private lounges provide much-appreciated discretion and luxury.",
+          "details": "Food 5/5 — VIP Comfort 5/5",
+          "rating": 5
+        },
+        {
+          "name": "Emily & Thomas",
+          "city": "Brussels",
+          "badge": "Verified Guests",
+          "comment": "We celebrated our wedding anniversary at Savora. An unforgettable evening, caring staff, and the dark chocolate sphere was an absolute work of art!",
+          "details": "Overall Experience 5/5",
           "rating": 5
         }
       ]
@@ -267,13 +333,19 @@
     "access": "Hours & Access",
     "concierge": "Concierge & Social",
     "links": {
-      "menu": "The Gastronomic Menu",
+      "menu": "Gourmet Menu",
       "booking": "Book a Table",
-      "delivery": "Delivery & Drive",
+      "delivery": "Delivery Service",
       "gallery": "Gallery & Atmosphere",
       "about": "Our Story"
     }
   },
   "theme": "Toggle theme",
-  "lang": "Version Française"
+  "lang": "Version Française",
+  "wa": {
+    "order": "Hello Savora,\nI would like to place an order.",
+    "info": "Hello Savora,\nI would like some information.",
+    "dish": "Hello Savora,\nI would like to order the dish \"{dish}\".",
+    "booking": "Hello Savora,\nI would like to book a table.\n\nName: {name}\nPhone: {phone}\nDate: {date}\nTime: {time}\nGuests: {guests}\nArea: {area}\nOccasion: {occasion}\nRequest: {message}"
+  }
 }

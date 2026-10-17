@@ -51,7 +51,7 @@ export default function AboutPage({ params }: { params: Promise<{ locale: string
           <div className="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-gold/30 to-transparent blur-xl opacity-60" />
           <Photo
             src={restaurant.images.about}
-            alt="La Maison INTIMISSIME Lomé"
+            alt="La Maison Savora"
             className="relative aspect-[4/3] rounded-3xl border border-line shadow-2xl object-cover"
           />
         </div>

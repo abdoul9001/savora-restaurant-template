@@ -1,4 +1,4 @@
-# INTIMISSIME — Site Vitrine Officiel
+# Savora — Site Vitrine Officiel
 
 > Restaurant gastronomique à Lomé, Togo · Site bilingue FR / EN
 
@@ -37,7 +37,7 @@
 
 ```powershell
 git clone <repo-url>
-cd intimissime
+cd Savora
 
 # Copier les variables d'environnement
 copy .env.example .env.local
@@ -97,8 +97,8 @@ docker compose down
 docker compose up -d --build
 
 # Inspecter l'image
-docker image ls intimissime-app
-docker image inspect intimissime-app:latest
+docker image ls Savora-app
+docker image inspect Savora-app:latest
 ```
 
 ### Architecture multi-stage
@@ -118,7 +118,7 @@ Dockerfile
 |---|---|---|
 | `NODE_ENV` | Environnement | `production` |
 | `PORT` | Port d'écoute | `3000` |
-| `NEXT_PUBLIC_SITE_URL` | URL publique du site | `https://intimissime.com` |
+| `NEXT_PUBLIC_SITE_URL` | URL publique du site | `https://Savora.com` |
 | `NEXT_PUBLIC_WHATSAPP_NUMBER` | Numéro WhatsApp (réservations) | `22871030810` |
 
 Copier `.env.example` en `.env.local` et renseigner les valeurs.
@@ -128,7 +128,7 @@ Copier `.env.example` en `.env.local` et renseigner les valeurs.
 ## Structure du projet
 
 ```
-intimissime/
+Savora/
 ├── app/
 │   ├── [locale]/              # Pages par langue (FR / EN)
 │   │   ├── page.tsx           # Accueil
@@ -210,7 +210,7 @@ intimissime/
 
 | | |
 |---|---|
-| **Nom** | INTIMISSIME |
+| **Nom** | Savora |
 | **Adresse** | 647W+2P, Lomé, Togo |
 | **Téléphone** | +228 71 03 08 10 |
 | **Note Google** | ⭐ 4,4 / 5 (18 avis) |
@@ -233,4 +233,4 @@ Les pistes d'amélioration du projet sont documentées dans **[ROADMAP.md](./ROA
 
 ## Licence
 
-Projet privé — tous droits réservés © INTIMISSIME.
+Projet privé — tous droits réservés © Savora.

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Dancing_Script, Open_Sans } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -15,32 +15,31 @@ import Script from "next/script";
 import { Analytics } from "@/components/analytics/Analytics";
 import { ClickTracker } from "@/components/analytics/ClickTracker";
 
-const cormorant = Cormorant_Garamond({
+const dancing = Dancing_Script({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  variable: "--font-dancing",
   display: "swap",
 });
 
-const plusJakarta = Plus_Jakarta_Sans({
+const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-sans-body",
+  weight: ["400", "600", "700"],
+  variable: "--font-open-sans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    template: "%s | INTIMISSIME Lomé",
-    default: "INTIMISSIME | Haute Gastronomie & Lounge Bar à Lomé",
+    template: "%s | Savora",
+    default: "Savora | Haute Gastronomie & Lounge Bar",
   },
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "INTIMISSIME",
+    title: "Savora",
   },
 };
 
@@ -66,7 +65,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={`${cormorant.variable} ${plusJakarta.variable}`}
+      className={`${dancing.variable} ${openSans.variable}`}
     >
       <body className="pb-16 font-sans lg:pb-0 selection:bg-gold selection:text-white">
         <Script id="theme-init" strategy="beforeInteractive">

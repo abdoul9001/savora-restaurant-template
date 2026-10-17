@@ -8,8 +8,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        gold: "bg-gradient-to-r from-gold via-gold-hover to-[#98701e] text-white shadow-md shadow-gold/20 hover:shadow-lg hover:shadow-gold/30 hover:brightness-105",
-        outline: "border border-line bg-bg text-fg hover:border-gold hover:text-gold hover:bg-gold/5",
+        gold: "bg-gold text-white hover:bg-gold-hover",
+        outline: "border-2 border-gold bg-transparent text-fg hover:bg-gold hover:text-white",
         whatsapp: "bg-[#25D366] text-white shadow-md shadow-emerald-500/20 hover:bg-[#20bd5a] hover:shadow-lg",
       },
       size: {

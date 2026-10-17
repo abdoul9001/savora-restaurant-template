@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "INTIMISSIME | Haute Gastronomie & Lounge",
-    short_name: "INTIMISSIME",
+    name: "Savora | Haute Gastronomie & Lounge",
+    short_name: "Savora",
     description: "Haute Gastronomie, Lounge Feutré & Mixologie d'Exception à Lomé, Togo.",
     start_url: "/",
     display: "standalone",

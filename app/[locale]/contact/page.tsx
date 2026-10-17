@@ -52,7 +52,7 @@ export default function ContactPage({ params }: { params: Promise<{ locale: stri
                 {t("mainVenue")}
               </p>
               <h2 className="font-heading text-3xl font-bold text-fg mt-1">
-                INTIMISSIME
+                Savora
               </h2>
               <p className="text-xs text-fg-mute font-medium">
                 {restaurant.subtitle}
@@ -114,7 +114,7 @@ export default function ContactPage({ params }: { params: Promise<{ locale: stri
         <div className="lg:col-span-7">
           <div className="luxury-card overflow-hidden rounded-3xl border border-line bg-bg shadow-card">
             <iframe
-              title="Localisation Google Maps INTIMISSIME Lomé"
+              title="Localisation Google Maps Savora"
               loading="lazy"
               className="h-96 w-full border-0"
               src={`https://maps.google.com/maps?q=${encodeURIComponent("647W+2P, Lomé, Togo")}&t=&z=16&ie=UTF8&iwloc=&output=embed`}

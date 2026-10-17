@@ -71,7 +71,7 @@ export default function DeliveryPage() {
   const steps = t.raw("steps") as string[];
   const [selectedZone, setSelectedZone] = useState<DeliveryZone>(zones[0]);
 
-  const orderMessage = `Bonjour INTIMISSIME,\nJe souhaite passer une commande pour livraison.\n\nZone sélectionnée : ${selectedZone.name}\nFrais prévus : ${selectedZone.fee.toLocaleString()} FCFA\n\nVoici les plats souhaités :\n- \n\nAdresse exacte de livraison :\nNom & contact :`;
+  const orderMessage = `Bonjour Savora,\nJe souhaite passer une commande pour livraison.\n\nZone sélectionnée : ${selectedZone.name}\nFrais prévus : ${selectedZone.fee.toLocaleString()} FCFA\n\nVoici les plats souhaités :\n- \n\nAdresse exacte de livraison :\nNom & contact :`;
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-14">

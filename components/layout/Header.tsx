@@ -1,43 +1,48 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
 import { navLinks } from "@/data/nav";
 import { LangToggle, ThemeToggle } from "./Toggles";
 import { MobileMenu } from "./MobileMenu";
 import { cn } from "@/lib/utils";
-import { FlaticonCalendarTable } from "@/components/icons/FlaticonIcons";
+import { FlaticonCalendarTable, FlaticonSparkles } from "@/components/icons/FlaticonIcons";
 
 export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
 
+  // Sur desktop, on affiche les liens principaux ; la réservation est mise en valeur via le bouton doré dédié
+  const desktopLinks = navLinks.filter((l) => l.key !== "booking");
+
   return (
-    <header className="sticky top-0 z-40 border-b border-line/80 bg-bg/95 backdrop-blur-md transition-colors duration-200">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
-        {/* Logo de la marque */}
+    <header className="sticky top-0 z-40 bg-[#0d1522]/95 backdrop-blur-md border-b border-gold/15 text-white shadow-[0_4px_30px_rgba(0,0,0,0.35)] transition-all">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+        {/* Logo & Identité Savora */}
         <Link href="/" className="group flex flex-col shrink-0">
-          <span className="font-heading text-2xl sm:text-3xl font-bold tracking-[0.25em] text-fg transition-colors group-hover:text-gold whitespace-nowrap">
-            INTIMISSIME
-          </span>
-          <span className="text-[9px] uppercase tracking-[0.35em] text-gold font-sans font-semibold -mt-1 whitespace-nowrap">
-            Restaurant & Lounge · Lomé
+          <div className="flex items-center gap-1.5">
+            <FlaticonSparkles size={16} className="text-gold transition-transform group-hover:scale-110 duration-300" />
+            <span className="font-heading text-2xl sm:text-3xl font-bold tracking-tight text-white transition-colors group-hover:text-gold whitespace-nowrap">
+              Savora
+            </span>
+          </div>
+          <span className="text-[9px] uppercase tracking-[0.28em] text-gold/90 font-sans font-medium whitespace-nowrap pl-5">
+            Haute Gastronomie · Lounge
           </span>
         </Link>
 
-        {/* Liens de navigation Desktop : strictement sur une seule ligne (aucun retour à la ligne, aucun trait souligné) */}
-        <nav className="hidden items-center gap-1 lg:gap-2 text-xs font-medium xl:flex">
-          {navLinks.map((l) => {
+        {/* Liens de navigation Desktop épurés & élégants */}
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
+          {desktopLinks.map((l) => {
             const isActive = pathname === l.href;
             return (
               <Link
                 key={l.key}
                 href={l.href}
                 className={cn(
-                  "whitespace-nowrap rounded-full px-3 py-1.5 transition-all duration-200 select-none",
+                  "relative whitespace-nowrap rounded-full px-3.5 py-1.5 text-[13px] font-medium tracking-wide transition-all duration-200 select-none",
                   isActive
-                    ? "bg-gold/15 text-gold font-bold shadow-sm"
-                    : "text-fg-2 hover:bg-gold/5 hover:text-gold"
+                    ? "text-gold font-semibold bg-gold/10 ring-1 ring-gold/25 shadow-[0_0_12px_rgba(200,147,56,0.15)]"
+                    : "text-white/80 hover:text-gold hover:bg-white/[0.04]"
                 )}
               >
                 {t(l.key)}
@@ -46,16 +51,26 @@ export function Header() {
           })}
         </nav>
 
-        {/* Boutons d'action et Toggles */}
-        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        {/* Actions : Toggles & Bouton Réserver */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <LangToggle />
           <ThemeToggle />
-          <Button asChild className="hidden xl:inline-flex gap-2 px-5 py-2.5 text-xs font-semibold shadow-md whitespace-nowrap">
-            <Link href="/reservation">
-              <FlaticonCalendarTable size={15} />
-              <span>{t("cta")}</span>
-            </Link>
-          </Button>
+
+          {/* Bouton CTA Réserver une Table */}
+          <Link
+            href="/reservation"
+            className={cn(
+              "hidden lg:inline-flex items-center gap-2 rounded-full px-5 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 shadow-md",
+              pathname === "/reservation"
+                ? "bg-gold text-navy shadow-gold/30 ring-2 ring-gold/40"
+                : "bg-gold text-navy hover:bg-[#dfa745] hover:shadow-lg hover:shadow-gold/25 hover:scale-[1.02] active:scale-[0.98]"
+            )}
+          >
+            <FlaticonCalendarTable size={15} />
+            <span>{t("cta")}</span>
+          </Link>
+
+          {/* Menu Mobile */}
           <MobileMenu />
         </div>
       </div>

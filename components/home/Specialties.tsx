@@ -16,11 +16,14 @@ export function Specialties() {
   const t = useTranslations("home.specialties");
   const mTrans = useTranslations("menu");
   const locale = useLocale() as Locale;
-  // Sélectionner les 4 créations phares avec photos
-  const items = menu.filter((m) => m.available).slice(0, 4);
+  // Sélectionner les 4 créations phares (Entrée, Viande noble, Grillade d'exception, Dessert signature)
+  const flagshipIds = ["carpaccio-daurade", "filet-boeuf", "langouste-grillee", "sphere-chocolat"];
+  const items = flagshipIds
+    .map((id) => menu.find((m) => m.id === id))
+    .filter((m): m is NonNullable<typeof m> => Boolean(m));
 
   return (
-    <section className="bg-bg-alt/60 py-20 border-y border-line/60">
+    <section className="py-20">
       <div className="mx-auto max-w-6xl px-5">
         {/* En-tête animé */}
         <motion.div
@@ -61,9 +64,9 @@ export function Specialties() {
             <motion.article
               key={m.id}
               variants={scaleIn}
-              className="luxury-card group flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-bg shadow-card transition-all"
+              className="luxury-card feane-food-card group flex flex-col justify-between overflow-hidden rounded-2xl text-white"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-bl-[45px] bg-[#f1f2f3]">
                 <Photo
                   src={m.image}
                   alt={m.name[locale]}
@@ -83,24 +86,24 @@ export function Specialties() {
 
               <div className="flex flex-1 flex-col justify-between p-5 space-y-3">
                 <div>
-                  <h3 className="font-heading text-xl font-bold text-fg group-hover:text-gold transition-colors">
+                  <h3 className="font-heading text-2xl font-bold text-white group-hover:text-gold transition-colors">
                     {m.name[locale]}
                   </h3>
-                  <p className="mt-1 line-clamp-2 text-xs text-fg-2 leading-relaxed">
+                  <p className="mt-1 line-clamp-2 text-xs text-white/80 leading-relaxed">
                     {m.description[locale]}
                   </p>
                 </div>
 
-                <div className="pt-2 border-t border-line/60 flex items-center justify-between">
-                  <p className="font-heading text-lg font-bold text-gold">
+                <div className="pt-2 flex items-center justify-between">
+                  <p className="font-heading text-xl font-bold text-white">
                     {m.price.toLocaleString(locale)} <span className="text-xs font-sans font-semibold">{mTrans("fcfa")}</span>
                   </p>
-                  <Button asChild variant="whatsapp" className="px-3 py-1.5 text-xs">
+                  <Button asChild className="px-4 py-1.5 text-xs">
                     <a
                       target="_blank"
                       rel="noopener"
                       href={whatsappUrl(
-                        `Bonjour INTIMISSIME,\nJe souhaite commander le plat "${m.name[locale]}".`
+                        `Bonjour Savora,\nJe souhaite commander le plat "${m.name[locale]}".`
                       )}
                     >
                       Commander
